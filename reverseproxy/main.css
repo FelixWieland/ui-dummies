@@ -1,0 +1,64 @@
+:root {
+    --bulma-primary-h: 221deg;
+    --bulma-primary-s: 77%;
+    --bulma-primary-l: 55%;
+    --bulma-link-h: 221deg;
+    --bulma-link-s: 77%;
+    --bulma-link-l: 55%;
+    --bulma-info-h: 221deg;
+    --bulma-info-s: 77%;
+    --bulma-info-l: 55%;
+}
+
+.fixed-size {
+    height: 310px;
+}
+
+.k8-logo {
+    position: absolute;
+    top: -36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 80%;
+    opacity: 0.2;
+}
+
+.list li {
+    background-color: var(--bulma-scheme-main);
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-style: solid;
+    border-width: var(--bulma-control-border-width);
+    border-color: hsl(var(--bulma-input-h), var(--bulma-input-s), calc(var(--bulma-input-border-l) + var(--bulma-input-border-l-delta)));
+    border-radius: 8px;
+    color: hsl(var(--bulma-input-h), var(--bulma-input-s), var(--bulma-input-color-l));
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 11px;
+}
+
+.list li div:first-child {
+    flex-grow: 1;
+}
+
+.list li div:last-child {
+    opacity: 0.4;
+}
+
+.list li:hover {
+    cursor: pointer;
+    color: var(--bulma-link);
+    border-color: hsl(var(--bulma-input-focus-h), var(--bulma-input-focus-s), var(--bulma-input-focus-l));
+    box-shadow: var(--bulma-input-focus-shadow-size) hsla(var(--bulma-input-focus-h), var(--bulma-input-focus-s), var(--bulma-input-focus-l), var(--bulma-input-focus-shadow-alpha));
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
